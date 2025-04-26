@@ -5,6 +5,7 @@
 // - Display the author and quote using escaped quotation marks.
 // - Use string concatenation, not interpolation or substitution.
 // - Use a single output statement for the result.
+
 package main
 
 import (
