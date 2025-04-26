@@ -18,7 +18,7 @@ A personal project to get started with Go by solving the exercises from the book
 - Ex10 [x] [Self-Checkout](ex10/main.go)
 - Ex11 [x] [Currency Conversion](ex11/main.go)
 - Ex12 [x] [Computing Simple Interest](ex12/main.go)
-- Ex13 [ ] [Determining Compound Interest](ex13/main.go)
+- Ex13 [x] [Determining Compound Interest](ex13/main.go)
 #### Chapter 4: Making Decisions
 - Ex14 [ ] [Tax Calculator](ex14/main.go)
 - Ex15 [ ] [Password Validation](ex15/main.go)
