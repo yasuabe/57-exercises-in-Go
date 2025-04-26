@@ -14,7 +14,7 @@ A personal project to get started with Go by solving the exercises from the book
 #### Chapter 3: Calculations
 - Ex07 [x] [Area of a Rectangular Room](ex07/main.go)
 - Ex08 [x] [Pizza Party](ex08/main.go)
-- Ex09 [ ] [Paint Calculator](ex09/main.go)
+- Ex09 [x] [Paint Calculator](ex09/main.go)
 - Ex10 [ ] [Self-Checkout](ex10/main.go)
 - Ex11 [ ] [Currency Conversion](ex11/main.go)
 - Ex12 [ ] [Computing Simple Interest](ex12/main.go)
