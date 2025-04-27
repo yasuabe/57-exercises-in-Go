@@ -34,7 +34,7 @@ A personal project to get started with Go by solving the exercises from the book
 - Ex24 [x] [Anagram Checker](ex24/main.go)
 - Ex25 [ ] [Password Strength Indicator](ex25/main.go)
 - Ex26 [ ] [Months to Pay Off a Credit Card](ex26/main.go)
-- Ex27 [ ] [Validating Inputs](ex27/main.go)
+- Ex27 [x] [Validating Inputs](ex27/main.go)
 #### Chapter 6: Repetition
 - Ex28 [ ] [Adding Numbers](ex28/main.go)
 - Ex29 [ ] [Handling Bad Input](ex29/main.go)
