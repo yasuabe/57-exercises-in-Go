@@ -36,7 +36,7 @@ A personal project to get started with Go by solving the exercises from the book
 - Ex26 [ ] [Months to Pay Off a Credit Card](ex26/main.go)
 - Ex27 [x] [Validating Inputs](ex27/main.go)
 #### Chapter 6: Repetition
-- Ex28 [ ] [Adding Numbers](ex28/main.go)
+- Ex28 [x] [Adding Numbers](ex28/main.go)
 - Ex29 [ ] [Handling Bad Input](ex29/main.go)
 - Ex30 [ ] [Multiplication Table](ex30/main.go)
 - Ex31 [ ] [Karvonen Heart Rate](ex31/main.go)
