@@ -31,7 +31,7 @@ A personal project to get started with Go by solving the exercises from the book
 - Ex22 [ ] [Comparing Numbers](ex22/main.go)
 - Ex23 [x] [Troubleshooting Car Issues](ex23/main.go)
 #### Chapter 5: Functions
-- Ex24 [ ] [Anagram Checker](ex24/main.go)
+- Ex24 [x] [Anagram Checker](ex24/main.go)
 - Ex25 [ ] [Password Strength Indicator](ex25/main.go)
 - Ex26 [ ] [Months to Pay Off a Credit Card](ex26/main.go)
 - Ex27 [ ] [Validating Inputs](ex27/main.go)
@@ -76,7 +76,7 @@ A personal project to get started with Go by solving the exercises from the book
 ## Technologies Used
 - go1.24.2
 ### Dependency
-TODO
+- golang.org/x/exp ... [Anagram Checker](ex24/main.go)
 
 ## How to Run
 Run the following directly under the project.
