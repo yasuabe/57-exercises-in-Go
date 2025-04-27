@@ -29,7 +29,7 @@ A personal project to get started with Go by solving the exercises from the book
 - Ex20 [ ] [Multistate Sales Tax Calculator](ex20/main.go)
 - Ex21 [ ] [Numbers to Names](ex21/main.go)
 - Ex22 [ ] [Comparing Numbers](ex22/main.go)
-- Ex23 [ ] [Troubleshooting Car Issues](ex23/main.go)
+- Ex23 [x] [Troubleshooting Car Issues](ex23/main.go)
 #### Chapter 5: Functions
 - Ex24 [ ] [Anagram Checker](ex24/main.go)
 - Ex25 [ ] [Password Strength Indicator](ex25/main.go)
