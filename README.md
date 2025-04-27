@@ -42,7 +42,7 @@ A personal project to get started with Go by solving the exercises from the book
 - Ex31 [ ] [Karvonen Heart Rate](ex31/main.go)
 - Ex32 [x] [Guess the Number Game](ex32/main.go)
 #### Chapter 7: Data Structures
-- Ex33 [ ] [Magic 8 Ball](ex33/main.go)
+- Ex33 [x] [Magic 8 Ball](ex33/main.go)
 - Ex34 [ ] [Employee List Removal](ex34/main.go)
 - Ex35 [ ] [Picking a Winner](ex35/main.go)
 - Ex36 [ ] [Computing Statistics](ex36/main.go)
