@@ -51,12 +51,12 @@ A personal project to get started with Go by solving the exercises from the book
 - Ex39 [ ] [Sorting Records](ex39/main.go)
 - Ex40 [x] [Filtering Records](ex40/main.go)
 #### Chapter 8: Working with Files
-- Ex41 [ ] [Name Sorter](ex41/main.go)
+- Ex41 [x] [Name Sorter](ex41/main.go)
 - Ex42 [ ] [Parsing a Data File](ex42/main.go)
 - Ex43 [ ] [Website Generator](ex43/main.go)
 - Ex44 [ ] [Product Search](ex44/main.go)
 - Ex45 [ ] [Word Finder](ex45/main.go)
-- Ex46 [ ] [Word Frequency Finder](ex46/main.go)
+- Ex46 [x] [Word Frequency Finder](ex46/main.go)
 #### Chapter 9: Working with External Services
 - Ex47 [ ] [Who’s in Space?](ex47/main.go)
 - Ex48 [ ] [Grabbing the Weather](ex48/main.go)
