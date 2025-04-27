@@ -20,7 +20,7 @@ A personal project to get started with Go by solving the exercises from the book
 - Ex12 [x] [Computing Simple Interest](ex12/main.go)
 - Ex13 [x] [Determining Compound Interest](ex13/main.go)
 #### Chapter 4: Making Decisions
-- Ex14 [ ] [Tax Calculator](ex14/main.go)
+- Ex14 [x] [Tax Calculator](ex14/main.go)
 - Ex15 [ ] [Password Validation](ex15/main.go)
 - Ex16 [ ] [Legal Driving Age](ex16/main.go)
 - Ex17 [ ] [Blood Alcohol Calculator](ex17/main.go)
