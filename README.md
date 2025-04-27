@@ -40,7 +40,7 @@ A personal project to get started with Go by solving the exercises from the book
 - Ex29 [ ] [Handling Bad Input](ex29/main.go)
 - Ex30 [ ] [Multiplication Table](ex30/main.go)
 - Ex31 [ ] [Karvonen Heart Rate](ex31/main.go)
-- Ex32 [ ] [Guess the Number Game](ex32/main.go)
+- Ex32 [x] [Guess the Number Game](ex32/main.go)
 #### Chapter 7: Data Structures
 - Ex33 [ ] [Magic 8 Ball](ex33/main.go)
 - Ex34 [ ] [Employee List Removal](ex34/main.go)
