@@ -65,7 +65,7 @@ A personal project to get started with Go by solving the exercises from the book
 - Ex51 [ ] [Pushing Notes to Firebase](ex51/main.go)
 - Ex52 [x] [Creating Your Own Time Service](ex52/main.go)
 #### Chapter 10: Full Programs
-- Ex53 [ ] [Todo List](ex53/main.go)
+- Ex53 [x] [Todo List](ex53/main.go)
 - Ex54 [ ] [URL Shortener](ex54/main.go)
 - Ex55 [ ] [Text Sharing](ex55/main.go)
 - Ex56 [ ] [Tracking Inventory](ex56/main.go)
@@ -77,6 +77,7 @@ A personal project to get started with Go by solving the exercises from the book
 - go1.24.2
 ### Dependency
 - golang.org/x/exp ... [Anagram Checker](ex24/main.go)
+- github.com/go-redis/redis/v8 ... [Todo List](ex53/main.go)
 
 ## How to Run
 Run the following directly under the project.
@@ -103,7 +104,17 @@ $ go run ./ex52/server
 $ go run ./ex52/client
 Current Time: 2025-04-28 09:27:26
 ```
-
+### Ex53: Todo List
+Start Redis in your local environment with the command below, then run `go run ./ex53`:
+```
+$ docker run --name redis-local -d -p 6379:6379 redis
+```
+The todo items are stored in a Redis hash with the key `ex53:tasks`, viewable using redis-cli.
+```
+127.0.0.1:6379> hgetall ex53:tasks 
+1) "5"
+2) "my todo 5"
+```
 ## Notes
 - GitHub Copilot in VSCode was extensively used for assistance.
 
