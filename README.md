@@ -5,79 +5,102 @@ A personal project to get started with Go by solving the exercises from the book
 
 ### Solved Exercises
 #### Chapter 2: Input, Processing, and Output
-- Ex01 [x] [Saying Hello](ex01/main.go)
-- Ex02 [x] [Counting the Number of Characters](ex02/main.go)
-- Ex03 [x] [Printing Quotes](ex03/main.go)
-- Ex04 [x] [Mad Lib](ex04/main.go)
-- Ex05 [x] [Simple Math](ex05/main.go)
-- Ex06 [x] [Retirement Calculator](ex06/main.go)
+| Exercise | dependencies | Memo  |
+| -------- | -------------| ----- |
+| Ex01 [x] [Saying Hello](ex01/main.go)
+| Ex02 [x] [Counting the Number of Characters](ex02/main.go)
+| Ex03 [x] [Printing Quotes](ex03/main.go)
+| Ex04 [x] [Mad Lib](ex04/main.go)
+| Ex05 [x] [Simple Math](ex05/main.go)
+| Ex06 [x] [Retirement Calculator](ex06/main.go)
 #### Chapter 3: Calculations
-- Ex07 [x] [Area of a Rectangular Room](ex07/main.go)
-- Ex08 [x] [Pizza Party](ex08/main.go)
-- Ex09 [x] [Paint Calculator](ex09/main.go)
-- Ex10 [x] [Self-Checkout](ex10/main.go)
-- Ex11 [x] [Currency Conversion](ex11/main.go)
-- Ex12 [x] [Computing Simple Interest](ex12/main.go)
-- Ex13 [x] [Determining Compound Interest](ex13/main.go)
+| Exercise | dependencies | Memo  |
+| -------- | -------------| ----- |
+| Ex07 [x] [Area of a Rectangular Room](ex07/main.go)
+| Ex08 [x] [Pizza Party](ex08/main.go)
+| Ex09 [x] [Paint Calculator](ex09/main.go)
+| Ex10 [x] [Self-Checkout](ex10/main.go)
+| Ex11 [x] [Currency Conversion](ex11/main.go)
+| Ex12 [x] [Computing Simple Interest](ex12/main.go)
+| Ex13 [x] [Determining Compound Interest](ex13/main.go)
 #### Chapter 4: Making Decisions
-- Ex14 [x] [Tax Calculator](ex14/main.go)
-- Ex15 [ ] [Password Validation](ex15/main.go)
-- Ex16 [ ] [Legal Driving Age](ex16/main.go)
-- Ex17 [ ] [Blood Alcohol Calculator](ex17/main.go)
-- Ex18 [ ] [Temperature Converter](ex18/main.go)
-- Ex19 [ ] [BMI Calculator](ex19/main.go)
-- Ex20 [ ] [Multistate Sales Tax Calculator](ex20/main.go)
-- Ex21 [ ] [Numbers to Names](ex21/main.go)
-- Ex22 [ ] [Comparing Numbers](ex22/main.go)
-- Ex23 [x] [Troubleshooting Car Issues](ex23/main.go)
+| Exercise | dependencies | Memo  |
+| -------- | -------------| ----- |
+| Ex14 [x] [Tax Calculator](ex14/main.go)
+| Ex15 [ ] [Password Validation](ex15/main.go)
+| Ex16 [ ] [Legal Driving Age](ex16/main.go)
+| Ex17 [ ] [Blood Alcohol Calculator](ex17/main.go)
+| Ex18 [ ] [Temperature Converter](ex18/main.go)
+| Ex19 [ ] [BMI Calculator](ex19/main.go)
+| Ex20 [ ] [Multistate Sales Tax Calculator](ex20/main.go)
+| Ex21 [ ] [Numbers to Names](ex21/main.go)
+| Ex22 [ ] [Comparing Numbers](ex22/main.go)
+| Ex23 [x] [Troubleshooting Car Issues](ex23/main.go)
 #### Chapter 5: Functions
-- Ex24 [x] [Anagram Checker](ex24/main.go)
-- Ex25 [ ] [Password Strength Indicator](ex25/main.go)
-- Ex26 [ ] [Months to Pay Off a Credit Card](ex26/main.go)
-- Ex27 [x] [Validating Inputs](ex27/main.go)
+| Exercise | dependencies | Memo  |
+| -------- | -------------| ----- |
+| Ex24 [x] [Anagram Checker](ex24/main.go)                 | exp |
+| Ex25 [ ] [Password Strength Indicator](ex25/main.go)     |     |
+| Ex26 [ ] [Months to Pay Off a Credit Card](ex26/main.go) |     |
+| Ex27 [x] [Validating Inputs](ex27/main.go)               |     |
 #### Chapter 6: Repetition
-- Ex28 [x] [Adding Numbers](ex28/main.go)
-- Ex29 [ ] [Handling Bad Input](ex29/main.go)
-- Ex30 [ ] [Multiplication Table](ex30/main.go)
-- Ex31 [ ] [Karvonen Heart Rate](ex31/main.go)
-- Ex32 [x] [Guess the Number Game](ex32/main.go)
+| Exercise | dependencies | Memo  |
+| -------- | -------------| ----- |
+| Ex28 [x] [Adding Numbers](ex28/main.go)
+| Ex29 [ ] [Handling Bad Input](ex29/main.go)
+| Ex30 [ ] [Multiplication Table](ex30/main.go)
+| Ex31 [ ] [Karvonen Heart Rate](ex31/main.go)
+| Ex32 [x] [Guess the Number Game](ex32/main.go)
 #### Chapter 7: Data Structures
-- Ex33 [x] [Magic 8 Ball](ex33/main.go)
-- Ex34 [ ] [Employee List Removal](ex34/main.go)
-- Ex35 [ ] [Picking a Winner](ex35/main.go)
-- Ex36 [ ] [Computing Statistics](ex36/main.go)
-- Ex37 [ ] [Password Generator](ex37/main.go)
-- Ex38 [ ] [Filtering Values](ex39/main.go)
-- Ex39 [ ] [Sorting Records](ex39/main.go)
-- Ex40 [x] [Filtering Records](ex40/main.go)
+| Exercise | dependencies | Memo  |
+| -------- | -------------| ----- |
+| Ex33 [x] [Magic 8 Ball](ex33/main.go)
+| Ex34 [ ] [Employee List Removal](ex34/main.go)
+| Ex35 [ ] [Picking a Winner](ex35/main.go)
+| Ex36 [ ] [Computing Statistics](ex36/main.go)
+| Ex37 [ ] [Password Generator](ex37/main.go)
+| Ex38 [ ] [Filtering Values](ex39/main.go)
+| Ex39 [ ] [Sorting Records](ex39/main.go)
+| Ex40 [x] [Filtering Records](ex40/main.go)
 #### Chapter 8: Working with Files
-- Ex41 [x] [Name Sorter](ex41/main.go)
-- Ex42 [ ] [Parsing a Data File](ex42/main.go)
-- Ex43 [ ] [Website Generator](ex43/main.go)
-- Ex44 [ ] [Product Search](ex44/main.go)
-- Ex45 [ ] [Word Finder](ex45/main.go)
-- Ex46 [x] [Word Frequency Finder](ex46/main.go)
+| Exercise | dependencies | Memo  |
+| -------- | -------------| ----- |
+| Ex41 [x] [Name Sorter](ex41/main.go)
+| Ex42 [ ] [Parsing a Data File](ex42/main.go)
+| Ex43 [ ] [Website Generator](ex43/main.go)
+| Ex44 [ ] [Product Search](ex44/main.go)
+| Ex45 [ ] [Word Finder](ex45/main.go)
+| Ex46 [x] [Word Frequency Finder](ex46/main.go)
 #### Chapter 9: Working with External Services
-- Ex47 [x] [Who’s in Space?](ex47/main.go)
-- Ex48 [ ] [Grabbing the Weather](ex48/main.go)
-- Ex49 [ ] [Flickr Photo Search](ex49/main.go)
-- Ex50 [ ] [Movie Recommendations](ex50/main.go)
-- Ex51 [ ] [Pushing Notes to Firebase](ex51/main.go)
-- Ex52 [x] [Creating Your Own Time Service](ex52/main.go)
+| Exercise | dependencies | Memo  |
+| -------- | -------------| ----- |
+| Ex47 [x] [Who’s in Space?](ex47/main.go)
+| Ex48 [ ] [Grabbing the Weather](ex48/main.go)
+| Ex49 [ ] [Flickr Photo Search](ex49/main.go)
+| Ex50 [ ] [Movie Recommendations](ex50/main.go)
+| Ex51 [ ] [Pushing Notes to Firebase](ex51/main.go)
+| Ex52 [x] [Creating Your Own Time Service](ex52/main.go)
 #### Chapter 10: Full Programs
-- Ex53 [x] [Todo List](ex53/main.go)
-- Ex54 [ ] [URL Shortener](ex54/main.go)
-- Ex55 [ ] [Text Sharing](ex55/main.go)
-- Ex56 [x] [Tracking Inventory](ex56/main.go)
-- Ex57 [x] [Trivia App](ex57/main.go)
+| Exercise | dependencies | Memo  |
+| -------- | -------------| ----- |
+| Ex53 [x] [Todo List](ex53/main.go)          | redis                  | |
+| Ex54 [x] [URL Shortener](ex54/main.go)      | mux, redis             | |
+| Ex55 [x] [Text Sharing](ex55/main.go)       | mongo-driver, uuid, net| |
+| Ex56 [x] [Tracking Inventory](ex56/main.go) |                        | |
+| Ex57 [x] [Trivia App](ex57/main.go)         |                        | |
 
 ※ [x] Completed, [ ] Pending
 
 ## Technologies Used
 - go1.24.2
 ### Dependency
-- golang.org/x/exp ... [Anagram Checker](ex24/main.go)
-- github.com/go-redis/redis/v8 ... [Todo List](ex53/main.go)
+- golang.org/x/exp
+- golang.org/x/net
+- github.com/go-redis/redis/v8
+- github.com/gorilla/mux
+- github.com/google/uuid
+- go.mongodb.org/mongo-driver/bson
+
 
 ## How to Run
 Run the following directly under the project.
