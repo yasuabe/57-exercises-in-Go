@@ -63,7 +63,7 @@ A personal project to get started with Go by solving the exercises from the book
 - Ex49 [ ] [Flickr Photo Search](ex49/main.go)
 - Ex50 [ ] [Movie Recommendations](ex50/main.go)
 - Ex51 [ ] [Pushing Notes to Firebase](ex51/main.go)
-- Ex52 [ ] [Creating Your Own Time Service](ex52/main.go)
+- Ex52 [x] [Creating Your Own Time Service](ex52/main.go)
 #### Chapter 10: Full Programs
 - Ex53 [ ] [Todo List](ex53/main.go)
 - Ex54 [ ] [URL Shortener](ex54/main.go)
@@ -92,6 +92,16 @@ You entered dimensions of 15 feet by 20 feet.
 The area is
 300 square feet
 27.871 square meters
+```
+### exercise 52
+1. start the server
+```
+$ go run ./ex52/server
+```
+2. run the client
+```
+$ go run ./ex52/client
+Current Time: 2025-04-28 09:27:26
 ```
 
 ## Notes
