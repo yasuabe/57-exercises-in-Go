@@ -69,7 +69,7 @@ A personal project to get started with Go by solving the exercises from the book
 - Ex54 [ ] [URL Shortener](ex54/main.go)
 - Ex55 [ ] [Text Sharing](ex55/main.go)
 - Ex56 [ ] [Tracking Inventory](ex56/main.go)
-- Ex57 [ ] [Trivia App](ex57/main.go)
+- Ex57 [x] [Trivia App](ex57/main.go)
 
 ※ [x] Completed, [ ] Pending
 
