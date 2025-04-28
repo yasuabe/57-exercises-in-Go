@@ -58,7 +58,7 @@ A personal project to get started with Go by solving the exercises from the book
 - Ex45 [ ] [Word Finder](ex45/main.go)
 - Ex46 [x] [Word Frequency Finder](ex46/main.go)
 #### Chapter 9: Working with External Services
-- Ex47 [ ] [Who’s in Space?](ex47/main.go)
+- Ex47 [x] [Who’s in Space?](ex47/main.go)
 - Ex48 [ ] [Grabbing the Weather](ex48/main.go)
 - Ex49 [ ] [Flickr Photo Search](ex49/main.go)
 - Ex50 [ ] [Movie Recommendations](ex50/main.go)
