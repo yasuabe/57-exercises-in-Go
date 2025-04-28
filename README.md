@@ -79,14 +79,14 @@ A personal project to get started with Go by solving the exercises from the book
 | Ex49 [ ] [Flickr Photo Search](ex49/main.go)
 | Ex50 [ ] [Movie Recommendations](ex50/main.go)
 | Ex51 [ ] [Pushing Notes to Firebase](ex51/main.go)
-| Ex52 [x] [Creating Your Own Time Service](ex52/main.go)
+| Ex52 [x] [Creating Your Own Time Service](ex52/main.go) | | Rest Client & Server |
 #### Chapter 10: Full Programs
 | Exercise | dependencies | Memo  |
 | -------- | -------------| ----- |
-| Ex53 [x] [Todo List](ex53/main.go)          | redis                  | |
-| Ex54 [x] [URL Shortener](ex54/main.go)      | mux, redis             | |
-| Ex55 [x] [Text Sharing](ex55/main.go)       | mongo-driver, uuid, net| |
-| Ex56 [x] [Tracking Inventory](ex56/main.go) |                        | |
+| Ex53 [x] [Todo List](ex53/main.go)          | redis                  | Redis |
+| Ex54 [x] [URL Shortener](ex54/main.go)      | mux, redis             | Web App + Redis|
+| Ex55 [x] [Text Sharing](ex55/main.go)       | mongo-driver, uuid, net| Web App + Mongo|
+| Ex56 [x] [Tracking Inventory](ex56/main.go) |                        | Web App |
 | Ex57 [x] [Trivia App](ex57/main.go)         |                        | |
 
 ※ [x] Completed, [ ] Pending
