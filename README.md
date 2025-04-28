@@ -68,7 +68,7 @@ A personal project to get started with Go by solving the exercises from the book
 - Ex53 [x] [Todo List](ex53/main.go)
 - Ex54 [ ] [URL Shortener](ex54/main.go)
 - Ex55 [ ] [Text Sharing](ex55/main.go)
-- Ex56 [ ] [Tracking Inventory](ex56/main.go)
+- Ex56 [x] [Tracking Inventory](ex56/main.go)
 - Ex57 [x] [Trivia App](ex57/main.go)
 
 ※ [x] Completed, [ ] Pending
@@ -115,6 +115,9 @@ The todo items are stored in a Redis hash with the key `ex53:tasks`, viewable us
 1) "5"
 2) "my todo 5"
 ```
+### Ex56: Tracking Inventory
+Start the server with `go run ./ex56` and access `localhost:8080/ex56` through a browser.
+
 ## Notes
 - GitHub Copilot in VSCode was extensively used for assistance.
 
