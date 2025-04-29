@@ -75,7 +75,7 @@ A personal project to get started with Go by solving the exercises from the book
 | Exercise | dependencies | Memo  |
 | -------- | -------------| ----- |
 | Ex47 [x] [Who’s in Space?](ex47/main.go)                |      |     
-| Ex48 [ ] [Grabbing the Weather](ex48/main.go)           |      |          
+| Ex48 [x] [Grabbing the Weather](ex48/main.go)           |      |          
 | Ex49 [x] [Flickr Photo Search](ex49/main.go)            | fyne | GUI, goroutine       |        
 | Ex50 [x] [Movie Recommendations](ex50/main.go)          |      |           
 | Ex51 [x] [Pushing Notes to Firebase](ex51/main.go)      |      |               
