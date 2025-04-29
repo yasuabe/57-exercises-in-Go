@@ -60,7 +60,7 @@ A personal project to get started with Go by solving the exercises from the book
 | Ex36 [x] [Computing Statistics](ex36/main.go)
 | Ex37 [ ] [Password Generator](ex37/main.go)
 | Ex38 [x] [Filtering Values](ex39/main.go)
-| Ex39 [ ] [Sorting Records](ex39/main.go)
+| Ex39 [x] [Sorting Records](ex39/main.go)
 | Ex40 [x] [Filtering Records](ex40/main.go)
 #### Chapter 8: Working with Files
 | Exercise | dependencies | Memo  |
