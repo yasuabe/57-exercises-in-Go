@@ -68,7 +68,7 @@ A personal project to get started with Go by solving the exercises from the book
 | Ex41 [x] [Name Sorter](ex41/main.go)
 | Ex42 [ ] [Parsing a Data File](ex42/main.go)
 | Ex43 [ ] [Website Generator](ex43/main.go)
-| Ex44 [ ] [Product Search](ex44/main.go)
+| Ex44 [x] [Product Search](ex44/main.go)
 | Ex45 [ ] [Word Finder](ex45/main.go)
 | Ex46 [x] [Word Frequency Finder](ex46/main.go)
 #### Chapter 9: Working with External Services
