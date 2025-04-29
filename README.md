@@ -30,7 +30,7 @@ A personal project to get started with Go by solving the exercises from the book
 | Ex15 [x] [Password Validation](ex15/main.go)
 | Ex16 [x] [Legal Driving Age](ex16/main.go)
 | Ex17 [ ] [Blood Alcohol Calculator](ex17/main.go)
-| Ex18 [ ] [Temperature Converter](ex18/main.go)
+| Ex18 [x] [Temperature Converter](ex18/main.go)
 | Ex19 [x] [BMI Calculator](ex19/main.go)
 | Ex20 [ ] [Multistate Sales Tax Calculator](ex20/main.go)
 | Ex21 [x] [Numbers to Names](ex21/main.go)
