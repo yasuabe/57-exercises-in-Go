@@ -33,7 +33,7 @@ A personal project to get started with Go by solving the exercises from the book
 | Ex18 [ ] [Temperature Converter](ex18/main.go)
 | Ex19 [x] [BMI Calculator](ex19/main.go)
 | Ex20 [ ] [Multistate Sales Tax Calculator](ex20/main.go)
-| Ex21 [ ] [Numbers to Names](ex21/main.go)
+| Ex21 [x] [Numbers to Names](ex21/main.go)
 | Ex22 [ ] [Comparing Numbers](ex22/main.go)
 | Ex23 [x] [Troubleshooting Car Issues](ex23/main.go)
 #### Chapter 5: Functions
@@ -59,7 +59,7 @@ A personal project to get started with Go by solving the exercises from the book
 | Ex35 [ ] [Picking a Winner](ex35/main.go)
 | Ex36 [x] [Computing Statistics](ex36/main.go)
 | Ex37 [ ] [Password Generator](ex37/main.go)
-| Ex38 [ ] [Filtering Values](ex39/main.go)
+| Ex38 [x] [Filtering Values](ex39/main.go)
 | Ex39 [ ] [Sorting Records](ex39/main.go)
 | Ex40 [x] [Filtering Records](ex40/main.go)
 #### Chapter 8: Working with Files
