@@ -31,7 +31,7 @@ A personal project to get started with Go by solving the exercises from the book
 | Ex16 [ ] [Legal Driving Age](ex16/main.go)
 | Ex17 [ ] [Blood Alcohol Calculator](ex17/main.go)
 | Ex18 [ ] [Temperature Converter](ex18/main.go)
-| Ex19 [ ] [BMI Calculator](ex19/main.go)
+| Ex19 [x] [BMI Calculator](ex19/main.go)
 | Ex20 [ ] [Multistate Sales Tax Calculator](ex20/main.go)
 | Ex21 [ ] [Numbers to Names](ex21/main.go)
 | Ex22 [ ] [Comparing Numbers](ex22/main.go)
