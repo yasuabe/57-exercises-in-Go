@@ -48,7 +48,7 @@ A personal project to get started with Go by solving the exercises from the book
 | -------- | -------------| ----- |
 | Ex28 [x] [Adding Numbers](ex28/main.go)
 | Ex29 [ ] [Handling Bad Input](ex29/main.go)
-| Ex30 [ ] [Multiplication Table](ex30/main.go)
+| Ex30 [x] [Multiplication Table](ex30/main.go)
 | Ex31 [ ] [Karvonen Heart Rate](ex31/main.go)
 | Ex32 [x] [Guess the Number Game](ex32/main.go)
 #### Chapter 7: Data Structures
