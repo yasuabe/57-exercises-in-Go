@@ -77,8 +77,8 @@ A personal project to get started with Go by solving the exercises from the book
 | Ex47 [x] [Who’s in Space?](ex47/main.go)
 | Ex48 [ ] [Grabbing the Weather](ex48/main.go)
 | Ex49 [ ] [Flickr Photo Search](ex49/main.go)
-| Ex50 [ ] [Movie Recommendations](ex50/main.go)
-| Ex51 [ ] [Pushing Notes to Firebase](ex51/main.go)
+| Ex50 [x] [Movie Recommendations](ex50/main.go)
+| Ex51 [x] [Pushing Notes to Firebase](ex51/main.go)
 | Ex52 [x] [Creating Your Own Time Service](ex52/main.go) | | Rest Client & Server |
 #### Chapter 10: Full Programs
 | Exercise | dependencies | Memo  |
