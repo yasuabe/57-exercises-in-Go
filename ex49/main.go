@@ -13,6 +13,7 @@ import (
 	"io"
 	"net/http"
 	"strings"
+	"sync"
 
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
@@ -61,6 +62,8 @@ func main() {
 	content := container.NewBorder(toolbar, statusBar, nil, nil, scrollableContainer)
 	myWindow.SetContent(content)
 
+	go updateImages(imageContainer, "", statusLabel)
+
 	myWindow.Resize(fyne.NewSize(800, 600))
 	fmt.Println("Starting the application...")
 	myWindow.ShowAndRun()
@@ -92,17 +95,24 @@ func updateImages(imageContainer *fyne.Container, tags string, statusLabel *widg
 			return
 		}
 
-		var images []fyne.CanvasObject
+		var wg sync.WaitGroup
+		imageChan := make(chan fyne.CanvasObject, len(flickrData.Items))
+
 		for _, item := range flickrData.Items {
-			imgResp, err := http.Get(item.Media.M)
-			if err != nil {
-				continue
-			}
-			func() {
+			wg.Add(1)
+			go func(mediaURL string) {
+				defer wg.Done()
+
+				imgResp, err := http.Get(mediaURL)
+				if err != nil {
+					fmt.Println("Error: Failed to fetch image:", err)
+					return
+				}
 				defer imgResp.Body.Close()
 
 				img, _, err := image.Decode(imgResp.Body)
 				if err != nil {
+					fmt.Println("Error: Failed to decode image:", err)
 					return
 				}
 
@@ -111,12 +121,22 @@ func updateImages(imageContainer *fyne.Container, tags string, statusLabel *widg
 				fyneImg := canvas.NewImageFromImage(resizedImg)
 				fyneImg.SetMinSize(fyne.NewSize(200, 200))
 				fyneImg.FillMode = canvas.ImageFillContain
-				images = append(images, fyneImg)
-			}()
+
+				imageChan <- fyneImg
+			}(item.Media.M)
 		}
 
-		// Now back to GUI update
-		// Safe because GUI updates are small and instant
+		// Wait for all goroutines to finish
+		wg.Wait()
+		close(imageChan)
+
+		// Collect images from the channel
+		var images []fyne.CanvasObject
+		for img := range imageChan {
+			images = append(images, img)
+		}
+
+		// Update the GUI
 		imageContainer.Objects = images
 		imageContainer.Refresh()
 
