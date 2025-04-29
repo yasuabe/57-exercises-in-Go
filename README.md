@@ -66,7 +66,7 @@ A personal project to get started with Go by solving the exercises from the book
 | Exercise | dependencies | Memo  |
 | -------- | -------------| ----- |
 | Ex41 [x] [Name Sorter](ex41/main.go)
-| Ex42 [ ] [Parsing a Data File](ex42/main.go)
+| Ex42 [x] [Parsing a Data File](ex42/main.go)
 | Ex43 [x] [Website Generator](ex43/main.go)
 | Ex44 [x] [Product Search](ex44/main.go)
 | Ex45 [x] [Word Finder](ex45/main.go)
