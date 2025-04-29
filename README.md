@@ -56,7 +56,7 @@ A personal project to get started with Go by solving the exercises from the book
 | -------- | -------------| ----- |
 | Ex33 [x] [Magic 8 Ball](ex33/main.go)
 | Ex34 [ ] [Employee List Removal](ex34/main.go)
-| Ex35 [ ] [Picking a Winner](ex35/main.go)
+| Ex35 [x] [Picking a Winner](ex35/main.go)
 | Ex36 [x] [Computing Statistics](ex36/main.go)
 | Ex37 [ ] [Password Generator](ex37/main.go)
 | Ex38 [x] [Filtering Values](ex39/main.go)
