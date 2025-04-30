@@ -58,7 +58,7 @@ A personal project to get started with Go by solving the exercises from the book
 | Ex34 [ ] [Employee List Removal](ex34/main.go)
 | Ex35 [x] [Picking a Winner](ex35/main.go)
 | Ex36 [x] [Computing Statistics](ex36/main.go)
-| Ex37 [ ] [Password Generator](ex37/main.go)
+| Ex37 [x] [Password Generator](ex37/main.go)
 | Ex38 [x] [Filtering Values](ex39/main.go)
 | Ex39 [x] [Sorting Records](ex39/main.go)
 | Ex40 [x] [Filtering Records](ex40/main.go)
