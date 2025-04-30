@@ -123,6 +123,7 @@ The area is
 
 ## Notes
 - GitHub Copilot in VSCode was extensively used for assistance.
+- Copilot generated a large amount of boilerplate code, but I deliberately left the duplicate code as is without refactoring.
 
 ## References
 - [Exercises for Programmers](https://www.oreilly.com/library/view/exercises-for-programmers/9781680501513/)

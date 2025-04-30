@@ -8,15 +8,28 @@
 
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+	"strings"
+)
 
 func main() {
-	// Prompt the user to enter two numbers
-	var num1, num2 float64
+	reader := bufio.NewReader(os.Stdin)
+
+	// Prompt the user to enter the first number
 	fmt.Print("Enter the first number? ")
-	fmt.Scanln(&num1)
+	input1, _ := reader.ReadString('\n')
+	input1 = strings.TrimSpace(input1)
+	num1, _ := strconv.ParseFloat(input1, 64)
+
+	// Prompt the user to enter the second number
 	fmt.Print("Enter the second number? ")
-	fmt.Scanln(&num2)
+	input2, _ := reader.ReadString('\n')
+	input2 = strings.TrimSpace(input2)
+	num2, _ := strconv.ParseFloat(input2, 64)
 
 	// Calculate the sum, difference, product, and quotient
 	sum := num1 + num2

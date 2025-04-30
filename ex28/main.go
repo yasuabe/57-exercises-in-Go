@@ -8,18 +8,22 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
 	"strconv"
+	"strings"
 )
 
 func main() {
 	const totalNumbers = 5
 	var total int
+	reader := bufio.NewReader(os.Stdin)
 
 	for i := 1; i <= totalNumbers; i++ {
-		var input string
 		fmt.Printf("Enter a number: ")
-		fmt.Scanln(&input)
+		input, _ := reader.ReadString('\n')
+		input = strings.TrimSpace(input)
 
 		number, err := strconv.Atoi(input)
 		if err != nil {

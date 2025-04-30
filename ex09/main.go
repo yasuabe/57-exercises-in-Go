@@ -7,18 +7,29 @@
 
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+	"strings"
+)
 
 func main() {
-	// Prompt for room length and width
-	var length, width float64
+	reader := bufio.NewReader(os.Stdin)
 	const coveragePerGallon = 350.0 // coverage per gallon in square feet
 
-	// Get user input
+	// Prompt for room length
 	fmt.Print("Enter the length of the room in feet: ")
-	fmt.Scanln(&length)
+	lengthInput, _ := reader.ReadString('\n')
+	lengthInput = strings.TrimSpace(lengthInput)
+	length, _ := strconv.ParseFloat(lengthInput, 64)
+
+	// Prompt for room width
 	fmt.Print("Enter the width of the room in feet: ")
-	fmt.Scanln(&width)
+	widthInput, _ := reader.ReadString('\n')
+	widthInput = strings.TrimSpace(widthInput)
+	width, _ := strconv.ParseFloat(widthInput, 64)
 
 	// Calculate area and gallons needed
 	area := length * width

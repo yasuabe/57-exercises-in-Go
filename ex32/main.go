@@ -14,8 +14,10 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"math/rand"
+	"os"
 	"strconv"
 	"strings"
 	"time"
@@ -24,13 +26,14 @@ import (
 func main() {
 	// Create a new random generator with a unique seed
 	rng := rand.New(rand.NewSource(time.Now().UnixNano()))
+	reader := bufio.NewReader(os.Stdin)
 	fmt.Println("Let's play Guess the Number.")
 
 	for {
 		// Select difficulty level
 		fmt.Print("Pick a difficulty level (1, 2, or 3): ")
-		var input string
-		fmt.Scanln(&input)
+		input, _ := reader.ReadString('\n')
+		input = strings.TrimSpace(input)
 
 		difficulty, err := strconv.Atoi(input)
 		if err != nil || difficulty < 1 || difficulty > 3 {
@@ -57,7 +60,8 @@ func main() {
 		guessCount := 0
 		for {
 			fmt.Print("Your guess: ")
-			fmt.Scanln(&input)
+			input, _ := reader.ReadString('\n')
+			input = strings.TrimSpace(input)
 
 			guessCount++
 			guess, err := strconv.Atoi(input)
@@ -78,7 +82,8 @@ func main() {
 
 		// Ask to play again
 		fmt.Print("Play again? (y/n): ")
-		fmt.Scanln(&input)
+		input, _ = reader.ReadString('\n')
+		input = strings.TrimSpace(input)
 		if strings.ToLower(input) != "y" {
 			fmt.Println("Goodbye!")
 			break

@@ -10,17 +10,28 @@
 
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+	"strings"
+)
 
 func main() {
-	// Prompt for Euro amount and exchange rate
-	var euros, exchangeRate float64
+	reader := bufio.NewReader(os.Stdin)
 
-	// Get user input
+	// Prompt for Euro amount
 	fmt.Print("How many euros are you exchanging? ")
-	fmt.Scanln(&euros)
+	eurosInput, _ := reader.ReadString('\n')
+	eurosInput = strings.TrimSpace(eurosInput)
+	euros, _ := strconv.ParseFloat(eurosInput, 64)
+
+	// Prompt for exchange rate
 	fmt.Print("What is the exchange rate? ")
-	fmt.Scanln(&exchangeRate)
+	exchangeRateInput, _ := reader.ReadString('\n')
+	exchangeRateInput = strings.TrimSpace(exchangeRateInput)
+	exchangeRate, _ := strconv.ParseFloat(exchangeRateInput, 64)
 
 	// Convert euros to U.S. dollars
 	dollars := (euros * exchangeRate) / 100.0

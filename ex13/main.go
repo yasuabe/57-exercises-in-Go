@@ -8,24 +8,40 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"math"
+	"os"
+	"strconv"
+	"strings"
 )
 
 func main() {
-	// Prompt for principal, interest rate, years, and compounding frequency
-	var principal, rate float64
-	var times, years int
+	reader := bufio.NewReader(os.Stdin)
 
-	// Get user input
+	// Prompt for principal
 	fmt.Print("What is the principal amount? ")
-	fmt.Scanln(&principal)
+	principalInput, _ := reader.ReadString('\n')
+	principalInput = strings.TrimSpace(principalInput)
+	principal, _ := strconv.ParseFloat(principalInput, 64)
+
+	// Prompt for rate
 	fmt.Print("What is the rate? ")
-	fmt.Scanln(&rate)
+	rateInput, _ := reader.ReadString('\n')
+	rateInput = strings.TrimSpace(rateInput)
+	rate, _ := strconv.ParseFloat(rateInput, 64)
+
+	// Prompt for number of years
 	fmt.Print("What is the number of years? ")
-	fmt.Scanln(&years)
+	yearsInput, _ := reader.ReadString('\n')
+	yearsInput = strings.TrimSpace(yearsInput)
+	years, _ := strconv.Atoi(yearsInput)
+
+	// Prompt for compounding frequency
 	fmt.Print("What is the number of times the interest is compounded per year? ")
-	fmt.Scanln(&times)
+	timesInput, _ := reader.ReadString('\n')
+	timesInput = strings.TrimSpace(timesInput)
+	times, _ := strconv.Atoi(timesInput)
 
 	// Convert percent rate to decimal
 	rate = rate / 100
@@ -34,7 +50,7 @@ func main() {
 	amount := principal * math.Pow(1+rate/float64(times), float64(times*years))
 
 	// Round up to the nearest cent
-	amount = float64(int(amount*100+0.999999)) / 100.0 // TODO: duplication
+	amount = float64(int(amount*100+0.999999)) / 100.0
 
 	// Print result formatted as currency
 	fmt.Printf(

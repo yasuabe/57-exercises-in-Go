@@ -6,13 +6,21 @@
 // - Use a single output statement to construct the output.
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strings"
+)
 
 func main() {
 	// Prompt the user to enter an input string
-	var input string
-	println("Enter a string:")
-	fmt.Scanln(&input)
+	fmt.Print("Enter a string: ") // Use fmt.Print to avoid a newline after the prompt
+	reader := bufio.NewReader(os.Stdin)
+	input, _ := reader.ReadString('\n') // Read all characters up to the newline
+
+	// Trim the newline character from the input
+	input = strings.TrimSpace(input)
 
 	// Determine the number of characters using a built-in function
 	charCount := len(input)

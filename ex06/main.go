@@ -9,17 +9,28 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
+	"strconv"
+	"strings"
 	"time"
 )
 
 func main() {
-	// Prompt the user to enter their current age and desired retirement age
-	var currentAge, retirementAge int
+	reader := bufio.NewReader(os.Stdin)
+
+	// Prompt the user to enter their current age
 	fmt.Print("What is your current age? ")
-	fmt.Scanln(&currentAge)
+	currentAgeInput, _ := reader.ReadString('\n')
+	currentAgeInput = strings.TrimSpace(currentAgeInput)
+	currentAge, _ := strconv.Atoi(currentAgeInput)
+
+	// Prompt the user to enter their desired retirement age
 	fmt.Print("At what age would you like to retire? ")
-	fmt.Scanln(&retirementAge)
+	retirementAgeInput, _ := reader.ReadString('\n')
+	retirementAgeInput = strings.TrimSpace(retirementAgeInput)
+	retirementAge, _ := strconv.Atoi(retirementAgeInput)
 
 	// Calculate how many years are left until retirement
 	yearsLeft := retirementAge - currentAge

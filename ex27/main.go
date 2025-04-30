@@ -12,7 +12,9 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
 	"regexp"
 	"strconv"
 	"strings"
@@ -75,19 +77,23 @@ func validateInput(firstName, lastName, zipCode, employeeID string) string {
 }
 
 func main() {
-	var firstName, lastName, zipCode, employeeID string
+	reader := bufio.NewReader(os.Stdin)
 
 	fmt.Print("Enter the first name: ")
-	fmt.Scanln(&firstName)
+	firstName, _ := reader.ReadString('\n')
+	firstName = strings.TrimSpace(firstName)
 
 	fmt.Print("Enter the last name: ")
-	fmt.Scanln(&lastName)
+	lastName, _ := reader.ReadString('\n')
+	lastName = strings.TrimSpace(lastName)
 
 	fmt.Print("Enter the ZIP code: ")
-	fmt.Scanln(&zipCode)
+	zipCode, _ := reader.ReadString('\n')
+	zipCode = strings.TrimSpace(zipCode)
 
 	fmt.Print("Enter an employee ID: ")
-	fmt.Scanln(&employeeID)
+	employeeID, _ := reader.ReadString('\n')
+	employeeID = strings.TrimSpace(employeeID)
 
 	result := validateInput(firstName, lastName, zipCode, employeeID)
 	fmt.Println(result)

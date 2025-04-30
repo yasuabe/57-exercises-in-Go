@@ -8,18 +8,30 @@
 // - Use a single output statement at the end.
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+	"strings"
+)
 
 func main() {
-	// Prompt for order amount and state
-	var orderAmount, taxRate, tax, total float64
-	var state, output string
+	reader := bufio.NewReader(os.Stdin)
 
-	// Get user input
+	// Prompt for order amount
 	fmt.Print("What is the order amount? ")
-	fmt.Scanln(&orderAmount)
+	orderAmountInput, _ := reader.ReadString('\n')
+	orderAmountInput = strings.TrimSpace(orderAmountInput)
+	orderAmount, _ := strconv.ParseFloat(orderAmountInput, 64)
+
+	// Prompt for state
 	fmt.Print("What is the state? ")
-	fmt.Scanln(&state)
+	state, _ := reader.ReadString('\n')
+	state = strings.TrimSpace(state)
+
+	var taxRate, tax, total float64
+	var output string
 
 	// Check if the state is WI
 	if state == "WI" {

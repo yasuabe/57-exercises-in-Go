@@ -8,7 +8,9 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
 	"strings"
 )
 
@@ -24,9 +26,10 @@ func main() {
 	}
 
 	// Prompt user for a search string
+	reader := bufio.NewReader(os.Stdin)
 	fmt.Print("Enter a search string: ")
-	var searchString string
-	fmt.Scanln(&searchString)
+	searchString, _ := reader.ReadString('\n')
+	searchString = strings.TrimSpace(searchString)
 
 	// Filter and display matching records
 	fmt.Println("\nResults:")

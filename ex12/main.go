@@ -8,19 +8,34 @@
 
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+	"strings"
+)
 
 func main() {
-	// Prompt for principal, interest rate, and years
-	var principal, rate, years float64
+	reader := bufio.NewReader(os.Stdin)
 
-	// Get user input
+	// Prompt for principal
 	fmt.Print("Enter the principal: ")
-	fmt.Scanln(&principal)
+	principalInput, _ := reader.ReadString('\n')
+	principalInput = strings.TrimSpace(principalInput)
+	principal, _ := strconv.ParseFloat(principalInput, 64)
+
+	// Prompt for rate of interest
 	fmt.Print("Enter the rate of interest: ")
-	fmt.Scanln(&rate)
+	rateInput, _ := reader.ReadString('\n')
+	rateInput = strings.TrimSpace(rateInput)
+	rate, _ := strconv.ParseFloat(rateInput, 64)
+
+	// Prompt for number of years
 	fmt.Print("Enter the number of years: ")
-	fmt.Scanln(&years)
+	yearsInput, _ := reader.ReadString('\n')
+	yearsInput = strings.TrimSpace(yearsInput)
+	years, _ := strconv.ParseFloat(yearsInput, 64)
 
 	// Compute simple interest
 	rate = rate / 100 // Convert percent rate to decimal
