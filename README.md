@@ -32,7 +32,7 @@ A personal project to get started with Go by solving the exercises from the book
 | Ex17 [ ] [Blood Alcohol Calculator](ex17/main.go)
 | Ex18 [x] [Temperature Converter](ex18/main.go)
 | Ex19 [x] [BMI Calculator](ex19/main.go)
-| Ex20 [ ] [Multistate Sales Tax Calculator](ex20/main.go)
+| Ex20 [x] [Multistate Sales Tax Calculator](ex20/main.go)
 | Ex21 [x] [Numbers to Names](ex21/main.go)
 | Ex22 [x] [Comparing Numbers](ex22/main.go)
 | Ex23 [x] [Troubleshooting Car Issues](ex23/main.go)
