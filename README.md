@@ -76,16 +76,16 @@ A personal project to get started with Go by solving the exercises from the book
 | -------- | -------------| ----- |
 | Ex47 [x] [Who’s in Space?](ex47/main.go)                |      |     
 | Ex48 [x] [Grabbing the Weather](ex48/main.go)           |      |          
-| Ex49 [x] [Flickr Photo Search](ex49/main.go)            | fyne | GUI, goroutine       |        
+| Ex49 [x] [Flickr Photo Search](ex49/main.go)            | fyne, resize | GUI, goroutine       |        
 | Ex50 [x] [Movie Recommendations](ex50/main.go)          |      |           
-| Ex51 [x] [Pushing Notes to Firebase](ex51/main.go)      |      |               
-| Ex52 [x] [Creating Your Own Time Service](ex52/main.go) |      | Rest Client & Server |
+| Ex51 [x] [Pushing Notes to Firebase](ex51/main.go)      |      | Firebase Realtime Database              
+| Ex52 [x] [Creating Your Own Time Service](ex52/main.go) |      | REST Server & Client |
 #### Chapter 10: Full Programs
 | Exercise | dependencies | Memo  |
 | -------- | -------------| ----- |
 | Ex53 [x] [Todo List](ex53/main.go)          | redis                  | Redis |
 | Ex54 [x] [URL Shortener](ex54/main.go)      | mux, redis             | Web App + Redis|
-| Ex55 [x] [Text Sharing](ex55/main.go)       | mongo-driver, uuid, net| Web App + Mongo|
+| Ex55 [x] [Text Sharing](ex55/main.go)       | mongo-driver, uuid, context| Web App + Mongo|
 | Ex56 [x] [Tracking Inventory](ex56/main.go) |                        | Web App |
 | Ex57 [x] [Trivia App](ex57/main.go)         |                        | |
 
@@ -94,19 +94,22 @@ A personal project to get started with Go by solving the exercises from the book
 ## Technologies Used
 - go1.24.2
 ### Dependency
+- fyne.io/fyne/v2
 - golang.org/x/exp
-- golang.org/x/net
+- golang.org/x/net/context
 - github.com/go-redis/redis/v8
 - github.com/gorilla/mux
 - github.com/google/uuid
-- go.mongodb.org/mongo-driver/bson
-
+- github.com/nfnt/resize
+- go.mongodb.org/mongo-driver
 
 ## How to Run
 Run the following directly under the project.
 ```
 $ go run ./ex[nn]
 ```
+Individual details are described in the README.md file of each respective folder.
+
 ### Example
 ```
 $ go run ./ex07
@@ -117,29 +120,6 @@ The area is
 300 square feet
 27.871 square meters
 ```
-### exercise 52
-1. start the server
-```
-$ go run ./ex52/server
-```
-2. run the client
-```
-$ go run ./ex52/client
-Current Time: 2025-04-28 09:27:26
-```
-### Ex53: Todo List
-Start Redis in your local environment with the command below, then run `go run ./ex53`:
-```
-$ docker run --name redis-local -d -p 6379:6379 redis
-```
-The todo items are stored in a Redis hash with the key `ex53:tasks`, viewable using redis-cli.
-```
-127.0.0.1:6379> hgetall ex53:tasks 
-1) "5"
-2) "my todo 5"
-```
-### Ex56: Tracking Inventory
-Start the server with `go run ./ex56` and access `localhost:8080/ex56` through a browser.
 
 ## Notes
 - GitHub Copilot in VSCode was extensively used for assistance.
