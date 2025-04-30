@@ -34,7 +34,7 @@ A personal project to get started with Go by solving the exercises from the book
 | Ex19 [x] [BMI Calculator](ex19/main.go)
 | Ex20 [ ] [Multistate Sales Tax Calculator](ex20/main.go)
 | Ex21 [x] [Numbers to Names](ex21/main.go)
-| Ex22 [ ] [Comparing Numbers](ex22/main.go)
+| Ex22 [x] [Comparing Numbers](ex22/main.go)
 | Ex23 [x] [Troubleshooting Car Issues](ex23/main.go)
 #### Chapter 5: Functions
 | Exercise | dependencies | Memo  |
